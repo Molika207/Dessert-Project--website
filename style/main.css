@@ -1,0 +1,165 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.6;
+  background: #f0f8ff;
+  color: #333;
+}
+
+/* ===== Header ===== */
+/* ===== Navbar ===== */
+header {
+  background: rgb(174, 197, 218); /* Darker blue */
+  color: #fff;
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #3399ff;
+  color: #fff;
+}
+
+nav a.active {
+  background: #0056b3;
+  color: #fff;
+  font-weight: 600;
+}
+.container{
+  height: 100vh;
+  background: seashell;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.hero-image img {
+    width: 500px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+.text h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: black;
+  font-family: 'Poppins';
+
+}
+
+.text p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: blue;
+}
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #3399ff;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #0073e6;
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #333;
+  color: #fff;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.site-footer h3 {
+  margin-bottom: 1rem;
+  color: #4da6ff;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ddd;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-contact p,
+.footer-about p {
+  margin-bottom: 0.5rem;
+  color: #ddd;
+}
+
+.footer-contact a {
+  color: #4da6ff;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
