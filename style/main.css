@@ -163,3 +163,248 @@ nav a.active {
   font-size: 0.9rem;
   color: #aaa;
 }
+/* ===== About Page ===== */
+#about {
+  padding: 3rem 2rem;
+  background: #e6f3ff;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0056b3;
+}
+
+#about p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+/* ===== Quote ===== */
+#about blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #0073e6;
+  background: #cce6ff;
+  padding: 1rem 1.5rem;
+  border-left: 5px solid #3399ff;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+/* ===== About Image ===== */
+.about-img {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 15px;
+  margin: 2rem auto;
+  display: block;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.about-img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Team Section ===== */
+.team {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  max-width: 800px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.team h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0056b3;
+}
+
+.team p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ===== Active Nav Link ===== */
+nav a.active {
+  font-weight: bold;
+  color: #cce6ff;
+  border-bottom: 2px solid #fff;
+}
+
+/* ===== Menu Page ===== */
+#menu {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #e6f3ff;
+}
+
+#menu h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #0056b3;
+}
+
+/* ===== Product Grid ===== */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-card:hover {
+  transform: translateX(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  font-size: 1.3rem;
+  color: #0056b3;
+  margin-bottom: 0.5rem;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.product-card span {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #3399ff;
+  margin-bottom: 0.8rem;
+}
+
+/* ===== Buttons ===== */
+.product-card button {
+  padding: 0.6rem 1.2rem;
+  background: #3399ff;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.product-card button:hover {
+  background: #0073e6;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1rem;
+  }
+}
+
+/* ===== Contact Page ===== */
+#contact {
+  padding: 3rem 2rem;
+  background: #f0f8ff;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0056b3;
+}
+
+#contact p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* ===== Contact Form ===== */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid #3399ff;
+  box-shadow: 0 0 5px rgba(51, 153, 255, 0.4);
+}
+
+.contact-form button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: #3399ff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #0073e6;
+}
+
+
