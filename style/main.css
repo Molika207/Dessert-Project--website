@@ -483,3 +483,8 @@ nav a.active {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+.contact-map {
+    margin-top: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+}
