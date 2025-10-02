@@ -13,8 +13,8 @@ body {
 }
 
 /* ===== Header ===== */
-header {
-  background: rgb(174, 197, 218); /* Darker blue */
+ header {
+  background: rgb(174, 197, 218);
   color: #fff;
   padding: 0.8rem 2rem;
   display: flex;
@@ -25,7 +25,6 @@ header {
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
-
 header h1 {
   font-size: 1.6rem;
   font-weight: 700;
@@ -48,18 +47,81 @@ nav a {
   padding: 0.5rem 1rem;
   border-radius: 25px;
   transition: all 0.3s ease;
+}  
+
+header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
 }
 
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
 nav a:hover {
   background: #3399ff;
   color: #fff;
 }
 
-nav a.active {
-  background: #0056b3;
+nav a {
+  text-decoration: none;
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
 }
+
+/* ===== Mobile Menu ===== */
+#menu-toggle {
+  display: none;/* hide checkbox */
+ }
+
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #fff;
+} 
+
+/* Responsive styles */
+@media (max-width: 480px) {
+  nav ul {
+    position: absolute;
+    top: 60px; /* below header */
+    right: 0;
+    background: rgb(174, 197, 218);
+    flex-direction: column;
+    width: 200px;
+    display: none; /* hidden by default */
+    padding: 1rem;
+    border-radius: 8px 0 0 8px; 
+   }
+
+  /* Show menu when checkbox is checked */
+ #menu-toggle:checked + .menu-icon + nav ul {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  } 
+
+   /* Hide desktop flex  */
+  .nav {
+    flex: 1;
+  }
+  header{
+  display: flex;
+  justify-content: space-around;
+  }
+}
+
 
 /* ===== Hero Section ===== */
 .container {
@@ -236,11 +298,7 @@ nav a.active {
   line-height: 1.6;
 }
 
-nav a.active {
-  font-weight: bold;
-  color: #cce6ff;
-  border-bottom: 2px solid #fff;
-}
+
 
 /* ===== Menu Page ===== */
 #menu {
@@ -400,17 +458,17 @@ nav a.active {
 /* Mobile (max-width: 600px) */
 @media (max-width: 600px) {
   header {
-    flex-direction: column;
+ 
     text-align: center;
     padding: 1rem;
   }
   nav ul {
-    flex-direction: column;
+    
     gap: 0.8rem;
     margin-top: 1rem;
   }
   .container {
-    flex-direction: column;
+   
     text-align: center;
     padding: 1rem;
   }
@@ -425,7 +483,7 @@ nav a.active {
     font-size: 1rem;
   }
   .products {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 /* Tablets (601px - 768px) */
@@ -487,4 +545,4 @@ nav a.active {
     margin-top: 40px;
     border-radius: 10px;
     overflow: hidden;
-}
+} 
